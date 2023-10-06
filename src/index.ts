@@ -48,7 +48,8 @@ const server = new ApolloServer({
   resolvers,
   plugins: [
     ApolloServerPluginLandingPageLocalDefault()
-  ]
+  ],
+  introspection: true
 });
 
 // Passing an ApolloServer instance to the `startStandaloneServer` function:
